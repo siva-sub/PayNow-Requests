@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Claude Code settings
+.claude/
+
+# Dot files
+.*
+!.gitignore
+!.github/

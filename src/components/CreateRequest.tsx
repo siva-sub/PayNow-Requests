@@ -14,6 +14,7 @@ export default function CreateRequest() {
   const [qrCode, setQrCode] = useState('');
   const [requestUrl, setRequestUrl] = useState('');
   const [error, setError] = useState('');
+  const [expiryDate, setExpiryDate] = useState<Date | null>(null);
 
   const handleCreate = async () => {
     setError('');
@@ -31,6 +32,7 @@ export default function CreateRequest() {
     const newExpiry = useExpiry
       ? new Date(Date.now() + expiryHours * 60 * 60 * 1000)
       : null;
+    setExpiryDate(newExpiry);
 
     const requestData = {
       phone,
@@ -44,7 +46,6 @@ export default function CreateRequest() {
     const baseUrl = window.location.origin + window.location.pathname;
     const fullUrl = `${baseUrl}#/request/${encodedData}`;
     setRequestUrl(fullUrl);
-    setShortUrl('');
 
     const qrData = generatePayNowQR({
       phone,
@@ -265,11 +266,11 @@ export default function CreateRequest() {
                   <p className="text-lg font-semibold text-gray-900">{reason}</p>
                 </div>
 
-                {useExpiry && (
+                {useExpiry && expiryDate && (
                   <div>
                     <p className="text-sm text-gray-600">Valid until:</p>
                     <p className="text-lg font-semibold text-gray-900">
-                      {expiry?.toLocaleString('en-SG', {
+                      {expiryDate.toLocaleString('en-SG', {
                         timeZone: 'Asia/Singapore',
                         dateStyle: 'medium',
                         timeStyle: 'short',
@@ -321,6 +322,7 @@ export default function CreateRequest() {
                   setShowQR(false);
                   setQrCode('');
                   setRequestUrl('');
+                  setExpiryDate(null);
                 }}
                 className="text-gray-600 font-medium py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors w-full"
               >
