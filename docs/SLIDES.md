@@ -19,6 +19,8 @@ style: |
   .small-text { font-size: 0.7em; }
   .center { text-align: center; }
   .profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.85em; }
+  .warning-box { background: #ffebee; border-left: 8px solid #ef5350; padding: 10px 15px; font-size: 0.9em; }
+  .success-box { background: #e8f5e9; border-left: 8px solid #66bb6a; padding: 10px 15px; font-size: 0.9em; }
 ---
 
 # **PayNow Requests** 🇸🇬
@@ -48,59 +50,20 @@ I specialize in taking complex financial systems and structuring them into relia
 
 ---
 
-# **The Problem** 🤔
+# **The Problem Solved** 🎯
 
-### Singapore's PayNow Ecosystem Gap
+### What Problems Does PayNow Requests Address?
 
-**Current State**: Individuals receive payments via **permanent aliases** (phone numbers)
+![h:320](https://kroki.io/mermaid/svg/eNp1ksFO4zAQhu88xSh7rCKgpWWJEFKb9IDURd1kEZUqDsaZNBap3bXdgl-AB-AR90nWTCyUHBIpnkl-f78nv7LT7FDDKj8Df8230Vqrlwb3CayZe1BvcF-itMK6OPVVCx49QxzfwWIbPShYa3Fi3N2-6PO7da0kwkkY4XnAE2r3VqPG6Lm1JiwlLFXS4rslbL5XR2nPc2RGSRASeM0sKNm4HpgR-Kh3KMN5_hHfD0I7D5WCMyuU7CFLQlaiQu54gwQV1u_j8DuHSumvGQNBy4KwwmfQfnqOf49orIFCNceOfdruoz7r9MtOT0vRvrj8SpWC8qlSSr-YecWSJhrNpnCz2WzA35twQODG2ygklcC9r9JChrxhOqBtdDCCEN4IlhRI32XiXbQyJs7wJDgm8JivoKiZFnJHNk9KvxqfODDpoKRNfYerbfSdYgJ_xB7jgqtDmCLVyCzCv49Pcm07nyBVGgi7IRvr_O8xh0o0TfIDq-lketERFkGoKl6W446QDgnZkLAcEoogsGk5Y9dd4TIo_CfO-E1XGQ8qk0Hlqq_8B8RLBDI=)
 
-This creates friction in digital contexts:
+### Problems → Solutions
 
-*   **Telegram/Discord/X**: Revealing phone number in group chats
-*   **Marketplaces**: Permanent identifier exposure to strangers
-*   **Group Expenses**: Phone number visible to all participants
-*   **Bank App QR Codes**: Static, no amount, no reason, no expiry
-
-> **Impact**: 3.5 million PayNow users lack a privacy-preserving way to request payments
-
----
-
-# **Existing Solutions Fall Short** 📱
-
-| Aspect | Bank App QR | serrynaimo/paynow-qr | xkjyeah/paynow-qr |
-|--------|-------------|----------------------|-------------------|
-| Core Product | Static QR (identity) | Static QR (utility) | Static QR (utility) |
-| Privacy | Phone always visible | Phone always visible | Phone always visible |
-| Context | None (reference only) | None (reference only) | None |
-| Expiry | None | None | None |
-| Sharing | Screenshot only | Screenshot/print | Screenshot/print |
-| Target User | Everyone | Merchants | Individuals |
-
-> **Gap**: No privacy-preserving, intent-centric payment request tool for individuals
-
----
-
-# **The Solution: PayNow Requests** 💡
-
-A **client-side web application** that transforms PayNow from identity-centric to **intent-centric** payments.
-
-<div class="columns">
-<div>
-
-### Key Features
-*   **Intent-Centric**: "Requesting SGD X for Y, valid until Z"
-*   **Privacy-Preserving**: Phone masked (`+65 9XXX XXXX`) in shared links
-*   **Time-Scoped**: Explicit expiry indicates urgency
-*   **Cross-Device**: URL-encoded requests work on any device
-*   **No Backend**: Pure client-side, deployable to GitHub Pages
-
-</div>
-<div>
-
-![h:280](https://kroki.io/mermaid/svg/eNpNjLEKgzAURXe_4mLHIrUt2ipF0EAnB6uLUBxSTVSMUVI7-PeVoOCDe5dz7qsVHRvEqYHlwreZTbRmOPvIGqpYhbiV3eOjTsHRdeDleY4luVnAsgJEm3_x8UpBhopp9_kTAkkzSGYW-nGkdbLpVx8RlR3CcdQ-GSRvVY-Ezj2T0zrS9Z1mwRCCt0L4B88uKfd2IFoB52V5t3eArIA6lUtvxh_MxkG9)
-
-</div>
-</div>
+| Problem | Solution |
+|---------|----------|
+| **No Privacy** | Phone masked (`+65 9XXX XXXX`) in shared links |
+| **No Context** | Intent declared: Amount + Reason + Expiry |
+| **No Cross-Device** | URL-encoded sharing works on any device |
+| **No Lifecycle** | Time-scoped: Create → Share → Pay → Expire |
 
 ---
 
@@ -108,17 +71,70 @@ A **client-side web application** that transforms PayNow from identity-centric t
 
 ### From Identity-Centric → Intent-Centric
 
-**Before**:
+**Current (Identity-Centric)**:
 *"Here is my phone number (+65 91234567), pay me"*
 
-**After**:
+**New (Intent-Centric)**:
 *"Alice requests SGD 50.00 for Friday dinner at Nando's, valid until 8 PM"*
 
-> **This treats the payment request as a first-class object** — with lifecycle, state, and metadata — rather than just a QR code utility.
+> This treats the **payment request as a first-class object** — with lifecycle, state, and metadata — rather than just a QR code utility.
 
 ---
 
-# **How It Works** 🚀
+# **Push vs Pull Payment Models** 💳
+
+### Why India's UPI Discontinued P2P Collect Requests
+
+<div class="warning-box">
+
+**IMPORTANT**: NPCI permanently discontinued UPI "collect request" for P2P transactions from **October 1, 2025** due to rising financial fraud.
+
+*   P2P Collect: **Discontinued** (85% fraud increase year-over-year)
+*   Payer-Initiated Only: All personal transfers must now be **push** payments
+
+</div>
+
+---
+
+# **Push vs Pull: Visual Comparison** 📊
+
+![h:280](https://kroki.io/mermaid/svg/eNp1kE9PwyAYh-9-ijf13ETb7uLBZIvzuNQ_PZkdsL60RAbIS4399lJYN2YsBwh5HuD3o7PM9PC6uQI_aHjvwr4epHzLphlqNh5QOchhs97ttg_ZPqjTqG-9w0ZEIFQfBBa_BiSX7SHP76EuIrXQoSNQ2gkuWuaEVukdRZTLWXbMEDBjrP7G1CujVwUvJMIfbAeHdLR8hLD-bUL91IT6pMnL-nGb3N2ce_TMIoEU6vPYojm10AbVjM5HY_zmFJ9a5q2n59SJ0ZtqdlqtuLCH_4O7UaL_WeBCyrtr5KtydZOSYpGUi6RaIs38TtUyfkmKRVIukuqS_AJXjqkh)
+
+### Key Difference
+
+| Aspect | Pull (UPI Collect - BANNED) | Push (PayNow Requests - SAFE) |
+|--------|----------------------------|-------------------------------|
+| **Initiation** | Payee sends notification | Payer opens link voluntarily |
+| **Control** | Payee controls flow | **Payer has full control** |
+| **Verification** | Single-tap approval | Scan QR in bank app + verify |
+| **Fraud Rate** | 0.05% - 0.12% | 0.01% - 0.03% |
+
+---
+
+# **Competitive Analysis** 📱
+
+### What About DBS PayLah! Request Feature?
+
+| Feature | DBS PayLah! | PayNow Requests |
+|---------|-------------|-----------------|
+| **Cross-Bank** | ❌ DBS/POSB only | ✅ All Singapore banks |
+| **App Required** | ❌ Must have PayLah! | ✅ Works via SMS link |
+| **SMS Fallback** | ✅ Downloads app prompt | ✅ Opens in any browser |
+| **Privacy** | ❌ Phone visible | ✅ Phone masked |
+| **Intent Display** | Amount only | ✅ Amount + Reason + Expiry |
+| **Open** | ❌ Closed ecosystem | ✅ Web-based, open |
+
+<div class="success-box">
+
+**PayLah! Innovation**: When a recipient doesn't have PayLah!, it sends an **SMS asking them to download and pay** — but this is still a **closed ecosystem** requiring the DBS app.
+
+**PayNow Requests Advantage**: Works with **any banking app** — DBS, OCBC, UOB, Standard Chartered — and only requires a **browser** to view the request.
+
+</div>
+
+---
+
+# **How PayNow Requests Works** 🚀
 
 <div class="columns">
 <div>
@@ -129,16 +145,16 @@ A **client-side web application** that transforms PayNow from identity-centric t
 3. Share via WhatsApp/SMS/Email
 
 ### For Payers
-1. Click shared link
+1. Click shared link (opens in browser)
 2. View: "X requests SGD Y for Z"
 3. Click "Show QR to Pay"
-4. Scan in banking app
+4. Scan in **any** banking app
 5. Verify and confirm
 
 </div>
 <div>
 
-![h:350](https://kroki.io/mermaid/svg/eNp1kD9PwzAQxfd-ihtBKhtiyFCpcRALf4yRwnxyjsZKcza2S9Vvj500IajgwcO93zu_50CfB2JNlcGdx34F6Tj00WjjkCMowAAqQyGSv5BFloUnjHSGLhCZEYmnP9x1lmpDx_-8ZQZK5A62zg3qcKmbzUYUcM8pEsjWMq1h29sDx3XKisHygIkJ07ahqQRclRjo7vZ6iTwQk08dcs5ne4RXNauqgLd2GAFyA4-GuzmDzBp6gi-D8N5iDFNMmdS6gBdH_GOpx2FFyzyzIs8PPWHoqBlrLXeJvdHdlGXpqkxwezxN04yXaZdGBsO_f68cHcLyh_F9btsTx9U3ynmZlg==)
+![h:280](https://kroki.io/mermaid/svg/eNp1kD9PwzAQxfd-ihtBKhtiyFCpcRALf4yRwnxyjsZKcza2S9Vvj500IajgwcO93zu_50CfB2JNlcGdx34F6Tj00WjjkCMowAAqQyGSv5BFloUnjHSGLhCZEYmnP9x1lmpDx_-8ZQZK5A62zg3qcKmbzUYUcM8pEsjWMq1h29sDx3XKisHygIkJ07ahqQRclRjo7vZ6iTwQk08dcs5ne4RXNauqgLd2GAFyA4-GuzmDzBp6gi-D8N5iDFNMmdS6gBdH_GOpx2FFyzyzIs8PPWHoqBlrLXeJvdHdlGXpqkxwezxN04yXaZdGBsO_f68cHcLyh_F9btsTx9U3ynmZlg==)
 
 </div>
 </div>
@@ -149,7 +165,7 @@ A **client-side web application** that transforms PayNow from identity-centric t
 
 ### Three-Stage Privacy Model
 
-![h:300](https://kroki.io/mermaid/svg/eNpNjLEKgzAURXe_4mLHIrUt2ipF0EAnB6uLUBxSTVSMUVI7-PeVoOCDe5dz7qsVHRvEqYHlwreZTbRmOPvIGqpYhbiV3eOjTsHRdeDleY4luVnAsgJEm3_x8UpBhopp9_kTAkkzSGYW-nGkdbLpVx8RlR3CcdQ-GSRvVY-Ezj2T0zrS9Z1mwRCCt0L4B88uKfd2IFoB52V5t3eArIA6lUtvxh_MxkG9)
+![h:280](https://kroki.io/mermaid/svg/eNpNjLEKgzAURXe_4mLHIrUt2ipF0EAnB6uLUBxSTVSMUVI7-PeVoOCDe5dz7qsVHRvEqYHlwreZTbRmOPvIGqpYhbiV3eOjTsHRdeDleY4luVnAsgJEm3_x8UpBhopp9_kTAkkzSGYW-nGkdbLpVx8RlR3CcdQ-GSRvVY-Ezj2T0zrS9Z1mwRCCt0L4B88uKfd2IFoB52V5t3eArIA6lUtvxh_MxkG9)
 
 | Stage | Phone Visibility | Purpose |
 |-------|------------------|---------|
@@ -174,56 +190,21 @@ A **client-side web application** that transforms PayNow from identity-centric t
 
 ---
 
-# **EMVCo QR Specification** 📋
-
-### PayNow QR Code Structure
-
-![h:320](https://kroki.io/mermaid/svg/eNpdkNFugjAUhu99ipPu2kURzcbFEqziXDKmbMmyNF5UaKEZtKaWbLz9DowLoRdNk-_7c_6e3PJLAR_rCeA5JowceBObH3wCNZkgJ5hOnyBkZDYLAFlpeAaRsRV35NSHOmWNyjyAvVZOcaeMhlfhCpMNLcqItwoQ2bTg2qEuzdDYMLL0AqDcidzYpm9xa2zRWKBRWyt02gxhhNAPIKxMrUcNd4geMNcSO4o9I3vsPigExLwajdwzssJSiZCinTmiL0jbQgkFWoj0-1pXvdBd9P_nc0bed_eH8Ct---xxTzzcemE0Dq6rs7BDuGBkmynHz6WAqOT5kPpIfy8K97TBhd1OvboGE9hQqrIM7qTMlr6c_AF0YH-N)
-
-### Key Fields
-*   **00**: Payload Format (EMVCo v1.0)
-*   **26**: Merchant Account Info (SG.PAYNOW + Phone)
-*   **53**: Currency (702 = SGD)
-*   **54**: Transaction Amount
-*   **62-01**: Bill Number / Reference
-*   **63**: CRC-16-CCITT Checksum
-
----
-
-# **Fraud Research: Learning from UPI** 📊
-
-### India's UPI Collect Request Was Discontinued (Oct 2025)
-
-**Why NPCI banned P2P pull requests**:
-*   Fraud exploitation via deceptive requests
-*   User confusion leading to mistaken approvals
-*   85% increase in fraud year-over-year (₹1,087 crore lost in FY24)
-
-### Key Insight
-
-| Model | Fraud Rate | Status |
-|--------|------------|--------|
-| **Pull (UPI Collect)** | 0.05% - 0.12% | **Discontinued** |
-| **Push (Direct Transfer)** | 0.01% - 0.03% | **Active** |
-
-> **PayNow Requests uses the safer PUSH model** — payer scans QR in banking app, not a notification-triggered pull
-
----
-
 # **Fraud Risk Assessment** ✅
 
-### PayNow Requests vs UPI Collect
+### PayNow Requests vs Discontinued UPI Collect
 
-| Aspect | UPI Collect (Discontinued) | PayNow Requests |
-|--------|---------------------------|------------------|
-| **Payment Model** | Pull (payee-initiated) | Push (payer-initiated) |
-| **Initiation** | Push notification to app | User clicks link |
+| Aspect | UPI Collect (DISCONTINUED) | PayNow Requests |
+|--------|----------------------------|------------------|
+| **Payment Model** | Pull (payee-initiated) | **Push (payer-initiated)** |
+| **Initiation** | Push notification to app | User clicks link voluntarily |
 | **Verification** | None (direct approval) | Must scan QR in bank app |
 | **Phone Privacy** | Full phone visible | Masked in link |
-| **Fraud Risk** | **HIGH** | **LOW-MEDIUM** |
+| **Fraud Risk** | **HIGH** (85% YoY increase) | **LOW-MEDIUM** |
 
-### Mitigations Built-In
-1.  **Push Model**: Payer initiates via scan
+### Why PayNow Requests is Safer
+
+1.  **Push Model**: Payer initiates via scan (same as discontinued UPI Collect)
 2.  **Manual Banking App**: Human-in-the-loop required
 3.  **Clear Intent Display**: Amount, reason, expiry shown
 4.  **Phone Masking**: Reduces social engineering risk
