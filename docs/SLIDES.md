@@ -99,7 +99,7 @@ I specialize in taking complex financial systems and structuring them into relia
 
 # **Push vs Pull: Visual Comparison** 📊
 
-![h:170](https://kroki.io/mermaid/svg/eNp1kE9PwyAYh-9-ijf13ETb7uLBZIvzuNQ_PZkdsL60RAbIS4399lJYN2YsBwh5HuD3o7PM9PC6uQI_aHjvwr4epHzLphlqNh5QOchhs97ttg_ZPqjTqG-9w0ZEIFQfBBa_BiSX7SHP76EuIrXQoSNQ2gkuWuaEVukdRZTLWXbMEDBjrP7G1CujVwUvJMIfbAeHdLR8hLD-bUL91IT6pMnL-nGb3N2ce_TMIoEU6vPYojm10AbVjM5HY_zmFJ9a5q2n59SJ0ZtqdlqtuLCH_4O7UaL_WeBCyrtr5KtydZOSYpGUi6RaIs38TtUyfkmKRVIukuqS_AJXjqkh)
+![h:130](https://kroki.io/mermaid/svg/eNp1kEELwiAYQO_9io91Dkrt0iEoWqcYq_AUHWzpJtk2_FbQv2-bFRb5HRR5D32YW1EXsNkNoB28nfL-nN6MOUTdCstFksSr6NgL3aSTloiHlNERRqM5pOQQJVWjlZboa8RR6mwLjagRRF3b6i59jzqPdZ4-v4gsz_3-m4VFl4UF7Bfr2LuF_0TxNmpfCCsRjC4vvum6-KcLM1EibHe-45o4eztZVSptr_i3rnkY2f4KKG3MbCjVlE7HPiFBQoOEhQh_v8Myob4JCRIaJOybPAEv2Iw5)
 
 ### Key Difference
 
@@ -155,7 +155,7 @@ I specialize in taking complex financial systems and structuring them into relia
 </div>
 <div>
 
-![h:190](https://kroki.io/mermaid/svg/eNp1kD9PwzAQxfd-ihtBKhtiyFCpcRALf4yRwnxyjsZKcza2S9Vvj500IajgwcO93zu_50CfB2JNlcGdx34F6Tj00WjjkCMowAAqQyGSv5BFloUnjHSGLhCZEYmnP9x1lmpDx_-8ZQZK5A62zg3qcKmbzUYUcM8pEsjWMq1h29sDx3XKisHygIkJ07ahqQRclRjo7vZ6iTwQk08dcs5ne4RXNauqgLd2GAFyA4-GuzmDzBp6gi-D8N5iDFNMmdS6gBdH_GOpx2FFyzyzIs8PPWHoqBlrLXeJvdHdlGXpqkxwezxN04yXaZdGBsO_f68cHcLyh_F9btsTx9U3ynmZlg==)
+![h:250](https://kroki.io/mermaid/svg/eNpV0EFPwjAUB_A7n-KlJl6EyIXpOJhsA8aIJrgZPTQcHuOVNWxt7YaEb-9sGp099PL7t--fd7RoKniLR9CfiLOcPs_UdmTZDiaTJ4g5W8m6nsO20orGEDX6rLox5IStVmzn3sUumnCWkiKLHcFrDnfwLNXJJxKXWHBWVGgJviTCR4VdGxlzX7wUPrVwqSVnW7ySBW1ItVD__bJ0vuLsXdJl7rv0g_6VWblQyllSy_IERaUvfR2PqcN136NEBVLBHtVJqiOgMT6ydpGsH0JWiivcQqKVkLbxnjnfuJIN9fMT3ZiaOvLurra71gQRiJ_d3YTTEkU4gMSDEGIWHgaQ_kJZPk4HkHnA2SHAhwFsPATBfh_g6BuQcIFg)
 
 </div>
 </div>

@@ -26,6 +26,9 @@ dist-ssr
 # Claude Code settings
 .claude/
 
+# Reference materials
+Reference/
+
 # Dot files
 .*
 !.gitignore
