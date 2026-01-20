@@ -7,20 +7,21 @@ backgroundImage: url('https://marp.app/assets/hero-background.svg')
 style: |
   section {
     font-family: 'Inter', sans-serif;
-    font-size: 26px;
-    padding: 30px;
+    font-size: 22px;
+    padding: 25px;
   }
-  h1 { color: #2D3E50; font-size: 1.5em; margin-bottom: 0.1em; }
-  h2 { color: #E74C3C; font-size: 1.1em; margin-bottom: 0.4em; }
+  h1 { color: #2D3E50; font-size: 1.4em; margin-bottom: 0.1em; }
+  h2 { color: #E74C3C; font-size: 1.05em; margin-bottom: 0.3em; }
   strong { color: #2980B9; }
-  blockquote { background: #f9f9f9; border-left: 8px solid #ccc; padding: 10px 15px; font-style: italic; font-size: 0.9em; }
-  img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; }
+  blockquote { background: #f9f9f9; border-left: 8px solid #ccc; padding: 8px 12px; font-style: italic; font-size: 0.9em; }
+  img { box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 8px; background-color: transparent; max-height: 45vh; }
   .columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: center; }
   .small-text { font-size: 0.7em; }
   .center { text-align: center; }
-  .profile-box { background: #f0f4f8; padding: 15px; border-radius: 8px; font-size: 0.85em; }
-  .warning-box { background: #ffebee; border-left: 8px solid #ef5350; padding: 10px 15px; font-size: 0.9em; }
-  .success-box { background: #e8f5e9; border-left: 8px solid #66bb6a; padding: 10px 15px; font-size: 0.9em; }
+  .profile-box { background: #f0f4f8; padding: 12px; border-radius: 8px; font-size: 0.8em; }
+  .warning-box { background: #ffebee; border-left: 8px solid #ef5350; padding: 8px 12px; font-size: 0.85em; }
+  .success-box { background: #e8f5e9; border-left: 8px solid #66bb6a; padding: 8px 12px; font-size: 0.85em; }
+  table { font-size: 0.9em; }
 ---
 
 # **PayNow Requests** 🇸🇬
@@ -54,7 +55,7 @@ I specialize in taking complex financial systems and structuring them into relia
 
 ### What Problems Does PayNow Requests Address?
 
-![h:320](https://kroki.io/mermaid/svg/eNp1ksFO4zAQhu88xSh7rCKgpWWJEFKb9IDURd1kEZUqDsaZNBap3bXdgl-AB-AR90nWTCyUHBIpnkl-f78nv7LT7FDDKj8Df8230Vqrlwb3CayZe1BvcF-itMK6OPVVCx49QxzfwWIbPShYa3Fi3N2-6PO7da0kwkkY4XnAE2r3VqPG6Lm1JiwlLFXS4rslbL5XR2nPc2RGSRASeM0sKNm4HpgR-Kh3KMN5_hHfD0I7D5WCMyuU7CFLQlaiQu54gwQV1u_j8DuHSumvGQNBy4KwwmfQfnqOf49orIFCNceOfdruoz7r9MtOT0vRvrj8SpWC8qlSSr-YecWSJhrNpnCz2WzA35twQODG2ygklcC9r9JChrxhOqBtdDCCEN4IlhRI32XiXbQyJs7wJDgm8JivoKiZFnJHNk9KvxqfODDpoKRNfYerbfSdYgJ_xB7jgqtDmCLVyCzCv49Pcm07nyBVGgi7IRvr_O8xh0o0TfIDq-lketERFkGoKl6W446QDgnZkLAcEoogsGk5Y9dd4TIo_CfO-E1XGQ8qk0Hlqq_8B8RLBDI=)
+![h:180](https://kroki.io/mermaid/svg/eNp1ksFO4zAQhu88xSh7rCKgpWWJEFKb9IDURd1kEZUqDsaZNBap3bXdgl-AB-AR90nWTCyUHBIpnkl-f78nv7LT7FDDKj8Df8230Vqrlwb3CayZe1BvcF-itMK6OPVVCx49QxzfwWIbPShYa3Fi3N2-6PO7da0kwkkY4XnAE2r3VqPG6Lm1JiwlLFXS4rslbL5XR2nPc2RGSRASeM0sKNm4HpgR-Kh3KMN5_hHfD0I7D5WCMyuU7CFLQlaiQu54gwQV1u_j8DuHSumvGQNBy4KwwmfQfnqOf49orIFCNceOfdruoz7r9MtOT0vRvrj8SpWC8qlSSr-YecWSJhrNpnCz2WzA35twQODG2ygklcC9r9JChrxhOqBtdDCCEN4IlhRI32XiXbQyJs7wJDgm8JivoKiZFnJHNk9KvxqfODDpoKRNfYerbfSdYgJ_xB7jgqtDmCLVyCzCv49Pcm07nyBVGgi7IRvr_O8xh0o0TfIDq-lketERFkGoKl6W446QDgnZkLAcEoogsGk5Y9dd4TIo_CfO-E1XGQ8qk0Hlqq_8B8RLBDI=)
 
 ### Problems → Solutions
 
@@ -98,7 +99,7 @@ I specialize in taking complex financial systems and structuring them into relia
 
 # **Push vs Pull: Visual Comparison** 📊
 
-![h:280](https://kroki.io/mermaid/svg/eNp1kE9PwyAYh-9-ijf13ETb7uLBZIvzuNQ_PZkdsL60RAbIS4399lJYN2YsBwh5HuD3o7PM9PC6uQI_aHjvwr4epHzLphlqNh5QOchhs97ttg_ZPqjTqG-9w0ZEIFQfBBa_BiSX7SHP76EuIrXQoSNQ2gkuWuaEVukdRZTLWXbMEDBjrP7G1CujVwUvJMIfbAeHdLR8hLD-bUL91IT6pMnL-nGb3N2ce_TMIoEU6vPYojm10AbVjM5HY_zmFJ9a5q2n59SJ0ZtqdlqtuLCH_4O7UaL_WeBCyrtr5KtydZOSYpGUi6RaIs38TtUyfkmKRVIukuqS_AJXjqkh)
+![h:170](https://kroki.io/mermaid/svg/eNp1kE9PwyAYh-9-ijf13ETb7uLBZIvzuNQ_PZkdsL60RAbIS4399lJYN2YsBwh5HuD3o7PM9PC6uQI_aHjvwr4epHzLphlqNh5QOchhs97ttg_ZPqjTqG-9w0ZEIFQfBBa_BiSX7SHP76EuIrXQoSNQ2gkuWuaEVukdRZTLWXbMEDBjrP7G1CujVwUvJMIfbAeHdLR8hLD-bUL91IT6pMnL-nGb3N2ce_TMIoEU6vPYojm10AbVjM5HY_zmFJ9a5q2n59SJ0ZtqdlqtuLCH_4O7UaL_WeBCyrtr5KtydZOSYpGUi6RaIs38TtUyfkmKRVIukuqS_AJXjqkh)
 
 ### Key Difference
 
@@ -154,7 +155,7 @@ I specialize in taking complex financial systems and structuring them into relia
 </div>
 <div>
 
-![h:280](https://kroki.io/mermaid/svg/eNp1kD9PwzAQxfd-ihtBKhtiyFCpcRALf4yRwnxyjsZKcza2S9Vvj500IajgwcO93zu_50CfB2JNlcGdx34F6Tj00WjjkCMowAAqQyGSv5BFloUnjHSGLhCZEYmnP9x1lmpDx_-8ZQZK5A62zg3qcKmbzUYUcM8pEsjWMq1h29sDx3XKisHygIkJ07ahqQRclRjo7vZ6iTwQk08dcs5ne4RXNauqgLd2GAFyA4-GuzmDzBp6gi-D8N5iDFNMmdS6gBdH_GOpx2FFyzyzIs8PPWHoqBlrLXeJvdHdlGXpqkxwezxN04yXaZdGBsO_f68cHcLyh_F9btsTx9U3ynmZlg==)
+![h:190](https://kroki.io/mermaid/svg/eNp1kD9PwzAQxfd-ihtBKhtiyFCpcRALf4yRwnxyjsZKcza2S9Vvj500IajgwcO93zu_50CfB2JNlcGdx34F6Tj00WjjkCMowAAqQyGSv5BFloUnjHSGLhCZEYmnP9x1lmpDx_-8ZQZK5A62zg3qcKmbzUYUcM8pEsjWMq1h29sDx3XKisHygIkJ07ahqQRclRjo7vZ6iTwQk08dcs5ne4RXNauqgLd2GAFyA4-GuzmDzBp6gi-D8N5iDFNMmdS6gBdH_GOpx2FFyzyzIs8PPWHoqBlrLXeJvdHdlGXpqkxwezxN04yXaZdGBsO_f68cHcLyh_F9btsTx9U3ynmZlg==)
 
 </div>
 </div>
@@ -165,7 +166,7 @@ I specialize in taking complex financial systems and structuring them into relia
 
 ### Three-Stage Privacy Model
 
-![h:280](https://kroki.io/mermaid/svg/eNpNjLEKgzAURXe_4mLHIrUt2ipF0EAnB6uLUBxSTVSMUVI7-PeVoOCDe5dz7qsVHRvEqYHlwreZTbRmOPvIGqpYhbiV3eOjTsHRdeDleY4luVnAsgJEm3_x8UpBhopp9_kTAkkzSGYW-nGkdbLpVx8RlR3CcdQ-GSRvVY-Ezj2T0zrS9Z1mwRCCt0L4B88uKfd2IFoB52V5t3eArIA6lUtvxh_MxkG9)
+![h:150](https://kroki.io/mermaid/svg/eNpNjLEKgzAURXe_4mLHIrUt2ipF0EAnB6uLUBxSTVSMUVI7-PeVoOCDe5dz7qsVHRvEqYHlwreZTbRmOPvIGqpYhbiV3eOjTsHRdeDleY4luVnAsgJEm3_x8UpBhopp9_kTAkkzSGYW-nGkdbLpVx8RlR3CcdQ-GSRvVY-Ezj2T0zrS9Z1mwRCCt0L4B88uKfd2IFoB52V5t3eArIA6lUtvxh_MxkG9)
 
 | Stage | Phone Visibility | Purpose |
 |-------|------------------|---------|
@@ -179,7 +180,7 @@ I specialize in taking complex financial systems and structuring them into relia
 
 ### Client-Side Only, Serverless Design
 
-![h:280](https://kroki.io/mermaid/svg/eNp1Tr0KwjAQ3n2KEOdaXBxEClbESdBWdAgdrng1xdjGJKJ9e5O0Qlvwhu-G7_emQHJyiifE3lpKRi3MjP7QjARBRDYKwSCj7U_w-UJtaPaTe825xDejDod86_GSAzRVbUXSf5u_ylUYHROywwoVmFp1HpfSc4xzUg7KrrlwMNrWh-k-DbcPKMXYHkN1Z9Shm6k72oM2jUA_viiFWE4X8ysUeY_q-v6wvmLAfQFmd2GO)
+![h:180](https://kroki.io/mermaid/svg/eNp1Tr0KwjAQ3n2KEOdaXBxEClbESdBWdAgdrng1xdjGJKJ9e5O0Qlvwhu-G7_emQHJyiifE3lpKRi3MjP7QjARBRDYKwSCj7U_w-UJtaPaTe825xDejDod86_GSAzRVbUXSf5u_ylUYHROywwoVmFp1HpfSc4xzUg7KrrlwMNrWh-k-DbcPKMXYHkN1Z9Shm6k72oM2jUA_viiFWE4X8ysUeY_q-v6wvmLAfQFmd2GO)
 
 ### Tech Stack
 *   **Frontend**: React 19, TypeScript, Vite
